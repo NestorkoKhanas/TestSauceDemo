@@ -7,6 +7,7 @@
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,11 +19,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="NUnit.Framework" />
+    <ProjectReference Include="..\TestSauceDemo\TestSauceDemo.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Tests\" />
+    <Using Include="NUnit.Framework" />
   </ItemGroup>
 
 </Project>
