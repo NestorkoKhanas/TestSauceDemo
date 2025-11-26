@@ -12,7 +12,7 @@ namespace TestSauceDemo.Pages
         private IWebElement UsernameInput => Driver.FindElement(By.Id("user-name"));
         private IWebElement PasswordInput => Driver.FindElement(By.Id("password"));
         private IWebElement LoginButton => Driver.FindElement(By.Id("login-button"));
-        private IWebElement ErrorMessage => Driver.FindElement(By.CssSelector("h3[data-test='error']"));
+        private IWebElement ErrorMessage => Driver.FindElement(By.XPath("//h3[@data-test='error']"));
 
         public void Open() => Driver.Navigate().GoToUrl(WebURL);
 
